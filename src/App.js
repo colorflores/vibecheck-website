@@ -85,12 +85,15 @@ const App = () => {
                 </a>
               </p>
               <Button
+                floated="right"
                 style={{
+                  width: "18rem",
                   backgroundColor: "black",
                   color: "white",
                   fontFamily: "Work Sans",
                   fontWeight: 300,
-                  borderRadius: 0
+                  borderRadius: 0,
+                  marginTop: "1rem"
                 }}
                 href="#about"
               >
@@ -114,7 +117,7 @@ const App = () => {
                 fontFamily: "Sail",
                 color: "black",
                 textDecoration: "underline",
-                textDecorationColor: "black"
+                textDecorationColor: "white"
               }}
             >
               What's vibecheck?
@@ -151,7 +154,7 @@ const App = () => {
                 </b>
                 {", "}
                 <b style={{ color: "#8600B6" }}>
-                  your personality
+                  personality
                 </b>{", "}
                 and {" "}
                 <b style={{ color: "#5187F0" }}>
