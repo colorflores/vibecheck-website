@@ -1,59 +1,163 @@
-import React from 'react';
-import './App.css';
-import 'semantic-ui-css/semantic.min.css'
-import { Grid, Image, Header, Container } from 'semantic-ui-react'
-import logo from './img/play_color.svg';
+import React from "react";
+import "./App.css";
+import "semantic-ui-css/semantic.min.css";
+import { Grid, Image, Container, Button } from "semantic-ui-react";
+import logo from "./img/play_color.svg";
 
 const App = () => {
   return (
-    <Grid stackable stretched style={{ height: '100vh', padding: '4rem' }}>
-      <Grid.Row verticalAlign="middle">
+    <Grid
+      stackable
+      style={{ height: "100vh", padding: "2rem", backgroundColor: "#FFC300" }}
+    >
+      <Grid.Row verticalAlign="middle" stretched style={{ height: "100vh" }}>
         <Grid.Column textAlign="right" width={6}>
-          <Image floated="right" centered style={{ width: '100%', right: 0 }} src={logo} />
+          <Image
+            className="main-logo"
+            centered
+            style={{ right: 0 }}
+            src={logo}
+          />
         </Grid.Column>
         <Grid.Column stretched width={10}>
           <Container textAlign="left">
-            <Header style={{
-              fontFamily: 'Sail',
-              fontSize: '6rem',
-              color: 'black'
-            }}>
+            <h1
+              className="title"
+              style={{
+                fontFamily: "Sail",
+                color: "black",
+                textDecoration: "underline",
+                textDecorationColor: "white"
+              }}
+            >
               What's the story?
-            </Header>
-            <Header style={{
-              fontFamily: 'Work Sans',
-              fontWeight: 300,
-              fontSize: '4rem',
-              color: 'black',
-              marginLeft: '2rem'
-            }}>
+            </h1>
+            <h2
+              className="subtitle"
+              style={{
+                fontFamily: "Work Sans",
+                fontWeight: 300,
+                color: "black"
+              }}
+            >
               Coming March 2020
-            </Header>
+            </h2>
             <div style={{ bottom: 0 }}>
-              <p style={{
-                fontFamily: 'Work Sans',
-                fontWeight: 400,
-                fontSize: '1rem',
-                color: 'black',
-                marginTop: '4rem',
-                marginLeft: '2rem'
-              }}>
-                A project developed by: 
-                  <a href="http://jacobdanovitch.me" style={{ color: '#5187F0' }}>
-                    <b> Jacob Danovitch</b>
-                  </a>
-                  ,
-                  <a href="https://github.com/faris" style={{ color: '#FFC300' }}>
-                    <b> Faris Mohamed</b>
-                  </a>
-                  ,
-                  <a href="https://omarflores.dev" style={{ color: '#8600B6' }}>
-                    <b> Omar Garcia Flores </b>
-                  </a>
-                  &
-                  <a href="#" style={{ color: '#FF351A' }}>
-                    <b> Nathan Embaye</b>
-                  </a>
+              <p
+                style={{
+                  fontFamily: "Work Sans",
+                  fontWeight: 400,
+                  fontSize: "1.2rem",
+                  color: "black"
+                }}
+              >
+                A project developed by:{" "}
+                <a
+                  className="profile"
+                  href="http://jacobdanovitch.me"
+                  style={{ color: "#5187F0" }}
+                >
+                  <b>Jacob Danovitch</b>
+                </a>
+                {", "}
+                <a
+                  className="profile"
+                  href="https://github.com/faris"
+                  style={{ color: "black" }}
+                >
+                  <b>Faris Mohamed</b>
+                </a>
+                {", "}
+                <a
+                  className="profile"
+                  href="https://omarflores.dev"
+                  style={{ color: "#8600B6" }}
+                >
+                  <b>Omar Garcia Flores</b>
+                </a>
+                {" & "}
+                <a
+                  className="profile"
+                  href="https://github.com/nathanembaye"
+                  style={{ color: "#FF351A" }}
+                >
+                  <b>Nathan Embaye</b>
+                </a>
+              </p>
+              <Button
+                style={{
+                  backgroundColor: "black",
+                  color: "white",
+                  fontFamily: "Work Sans",
+                  fontWeight: 300,
+                  borderRadius: 0
+                }}
+                href="#about"
+              >
+                Learn more ->
+              </Button>
+            </div>
+          </Container>
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row
+        verticalAlign="middle"
+        stretched
+        style={{ height: "100vh" }}
+        id="about"
+      >
+        <Grid.Column stretched>
+          <Container textAlign="left">
+            <h1
+              className="title"
+              style={{
+                fontFamily: "Sail",
+                color: "black",
+                textDecoration: "underline",
+                textDecorationColor: "black"
+              }}
+            >
+              What's vibecheck?
+            </h1>
+            <div style={{ bottom: 0 }}>
+              <p
+                style={{
+                  fontFamily: "Work Sans",
+                  fontWeight: 400,
+                  fontSize: "2rem",
+                  color: "black"
+                }}
+                className="about"
+              >
+                Much of the music we listen to is curated on listening behaviour
+                of other users, rather than the meaning of the music itself.
+                Vibecheck is an application that{" "}
+                <b style={{ color: "#000000" }}>
+                  recommends music based on your moods and emotions.
+                </b>
+              </p>
+              <p
+                style={{
+                  fontFamily: "Work Sans",
+                  fontWeight: 400,
+                  fontSize: "2rem",
+                  color: "black"
+                }}
+                className="about"
+              >
+                Our goal is to make you able to {" "}
+                <b style={{ color: "#FF351A" }}>
+                  find music that matches your context
+                </b>
+                {", "}
+                <b style={{ color: "#8600B6" }}>
+                  your personality
+                </b>{", "}
+                and {" "}
+                <b style={{ color: "#5187F0" }}>
+                music that you can relate
+                to. 
+                </b>
               </p>
             </div>
           </Container>
@@ -61,6 +165,6 @@ const App = () => {
       </Grid.Row>
     </Grid>
   );
-}
+};
 
 export default App;
