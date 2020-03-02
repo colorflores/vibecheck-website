@@ -88,6 +88,21 @@ const App = () => {
                 floated="right"
                 style={{
                   width: "18rem",
+                  backgroundColor: "white",
+                  color: "black",
+                  fontFamily: "Work Sans",
+                  fontWeight: 300,
+                  borderRadius: 0,
+                  marginTop: "1rem"
+                }}
+                href="/vibecheck-beta.apk"
+              >
+                Try out the beta
+              </Button>
+              <Button
+                floated="right"
+                style={{
+                  width: "18rem",
                   backgroundColor: "black",
                   color: "white",
                   fontFamily: "Work Sans",
@@ -99,6 +114,19 @@ const App = () => {
               >
                 Learn more ->
               </Button>
+              <p
+                style={{
+                  marginTop: '0.2rem',
+                  float: 'right',
+                  fontFamily: "Work Sans",
+                  fontWeight: 400,
+                  fontSize: "1rem",
+                  color: "black",
+                }}
+              >
+                By downloading this application you agree the use of infomation provided.
+                We are not liable for any damages to your device.
+              </p>
             </div>
           </Container>
         </Grid.Column>
