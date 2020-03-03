@@ -85,6 +85,7 @@ const App = () => {
                 </a>
               </p>
               <Button
+                className="action-button"
                 floated="right"
                 style={{
                   width: "18rem",
@@ -93,13 +94,13 @@ const App = () => {
                   fontFamily: "Work Sans",
                   fontWeight: 300,
                   borderRadius: 0,
-                  marginTop: "1rem"
                 }}
                 href="/vibecheck_beta_1.0.1.apk"
               >
                 Try out the beta
               </Button>
               <Button
+                className="action-button"
                 floated="right"
                 style={{
                   width: "18rem",
@@ -108,19 +109,18 @@ const App = () => {
                   fontFamily: "Work Sans",
                   fontWeight: 300,
                   borderRadius: 0,
-                  marginTop: "1rem"
                 }}
                 href="#about"
               >
                 Learn more ->
               </Button>
               <p
+                className="legend"
                 style={{
-                  marginTop: '0.2rem',
+                  marginTop: '0.1rem',
                   float: 'right',
                   fontFamily: "Work Sans",
                   fontWeight: 400,
-                  fontSize: "1rem",
                   color: "black",
                 }}
               >
@@ -190,6 +190,7 @@ const App = () => {
                 </b>
               </p>
               <Button
+                className="action-button"
                 floated="right"
                 style={{
                   width: "18rem",
@@ -198,13 +199,13 @@ const App = () => {
                   fontFamily: "Work Sans",
                   fontWeight: 300,
                   borderRadius: 0,
-                  marginTop: "1rem"
                 }}
                 href="/vibecheck_component_diagram.pdf"
               >
                 Our architecture
               </Button>
               <Button
+                className="action-button"
                 floated="right"
                 style={{
                   width: "18rem",
@@ -213,7 +214,6 @@ const App = () => {
                   fontFamily: "Work Sans",
                   fontWeight: 300,
                   borderRadius: 0,
-                  marginTop: "1rem"
                 }}
                 href="/vibecheck_brand_guide.pdf"
               >
