@@ -124,7 +124,7 @@ const App = () => {
                   color: "black",
                 }}
               >
-                By downloading this application you agree to the fair use of the infomation collected. We are not liable for any damages to your device.
+                By downloading this application you agree to the fair use of the infomation collected.
               </p>
             </div>
           </Container>
