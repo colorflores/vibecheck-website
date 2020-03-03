@@ -95,7 +95,7 @@ const App = () => {
                   borderRadius: 0,
                   marginTop: "1rem"
                 }}
-                href="/vibecheck-beta.apk"
+                href="/vibecheck_beta_1.0.1.apk"
               >
                 Try out the beta
               </Button>
@@ -124,8 +124,7 @@ const App = () => {
                   color: "black",
                 }}
               >
-                By downloading this application you agree the use of infomation provided.
-                We are not liable for any damages to your device.
+                By downloading this application you agree to the fair use of the infomation collected. We are not liable for any damages to your device.
               </p>
             </div>
           </Container>
