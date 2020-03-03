@@ -189,6 +189,36 @@ const App = () => {
                 to. 
                 </b>
               </p>
+              <Button
+                floated="right"
+                style={{
+                  width: "18rem",
+                  backgroundColor: "black",
+                  color: "white",
+                  fontFamily: "Work Sans",
+                  fontWeight: 300,
+                  borderRadius: 0,
+                  marginTop: "1rem"
+                }}
+                href="/vibecheck_component_diagram.pdf"
+              >
+                Our architecture
+              </Button>
+              <Button
+                floated="right"
+                style={{
+                  width: "18rem",
+                  backgroundColor: "black",
+                  color: "white",
+                  fontFamily: "Work Sans",
+                  fontWeight: 300,
+                  borderRadius: 0,
+                  marginTop: "1rem"
+                }}
+                href="/vibecheck_brand_guide.pdf"
+              >
+                Our brand guide
+              </Button>
             </div>
           </Container>
         </Grid.Column>
