@@ -95,7 +95,7 @@ const App = () => {
                   fontWeight: 300,
                   borderRadius: 0,
                 }}
-                href="/vibecheck_beta_1.0.2.apk"
+                href="/vibecheck_beta_1.0.3.apk"
               >
                 Try out the beta
               </Button>
