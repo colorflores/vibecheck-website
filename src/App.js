@@ -200,21 +200,6 @@ const App = () => {
                   fontWeight: 300,
                   borderRadius: 0,
                 }}
-                href="/vibecheck_component_diagram.pdf"
-              >
-                Our architecture
-              </Button>
-              <Button
-                className="action-button"
-                floated="right"
-                style={{
-                  width: "18rem",
-                  backgroundColor: "black",
-                  color: "white",
-                  fontFamily: "Work Sans",
-                  fontWeight: 300,
-                  borderRadius: 0,
-                }}
                 href="/vibecheck_brand_guide.pdf"
               >
                 Our brand guide
