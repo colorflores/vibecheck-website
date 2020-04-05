@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(.*youtube.*)$ https://www.youtube.com/watch?v=NBUNyWrtvOA
+RewriteRule ^(.*youtube.*)$ https://www.youtube.com/watch?v=GoZMTgulD_w
