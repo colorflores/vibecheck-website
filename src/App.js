@@ -2,7 +2,9 @@ import React from "react";
 import "./App.css";
 import "semantic-ui-css/semantic.min.css";
 import { Grid, Image, Container, Button } from "semantic-ui-react";
+import ReactPlayer from 'react-player';
 import logo from "./img/play_color.svg";
+import store from './img/playstore.png';
 
 const App = () => {
   return (
@@ -32,16 +34,6 @@ const App = () => {
             >
               What's the story?
             </h1>
-            <h2
-              className="subtitle"
-              style={{
-                fontFamily: "Work Sans",
-                fontWeight: 300,
-                color: "black"
-              }}
-            >
-              Coming March 2020
-            </h2>
             <div style={{ bottom: 0 }}>
               <p
                 style={{
@@ -84,41 +76,13 @@ const App = () => {
                   <b>Nathan Embaye</b>
                 </a>
               </p>
-              <Button
-                className="action-button"
-                floated="right"
-                style={{
-                  width: "18rem",
-                  backgroundColor: "white",
-                  color: "black",
-                  fontFamily: "Work Sans",
-                  fontWeight: 300,
-                  borderRadius: 0,
-                }}
-                href="/vibecheck_beta_1.0.3.apk"
-              >
-                Try out the beta
-              </Button>
-              <Button
-                className="action-button"
-                floated="right"
-                style={{
-                  width: "18rem",
-                  backgroundColor: "black",
-                  color: "white",
-                  fontFamily: "Work Sans",
-                  fontWeight: 300,
-                  borderRadius: 0,
-                }}
-                href="#about"
-              >
-                Learn more ->
-              </Button>
+              <div style={{ marginTop: '2rem', marginBottom: '1rem' }}>
+                <Image size='small' src={store} href="https://play.google.com/store/apps/details?id=com.vibecheck.vibecheck" />
+              </div>
               <p
                 className="legend"
                 style={{
                   marginTop: '0.1rem',
-                  float: 'right',
                   fontFamily: "Work Sans",
                   fontWeight: 400,
                   color: "black",
@@ -126,6 +90,20 @@ const App = () => {
               >
                 By downloading this application you agree to the fair use of the infomation collected.
               </p>
+            </div>
+          </Container>
+        </Grid.Column>
+      </Grid.Row>
+      <Grid.Row
+        verticalAlign="middle"
+        stretched
+        style={{ height: "100vh" }}
+        id="about"
+      >
+        <Grid.Column stretched>
+          <Container textAlign="left">
+            <div style={{ height: 600 }}>
+              <ReactPlayer width="100%" height="100%" url="https://www.youtube.com/watch?v=GoZMTgulD_w" />
             </div>
           </Container>
         </Grid.Column>
